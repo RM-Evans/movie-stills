@@ -21,7 +21,12 @@ jobs:
         with:
           node-version: "16"
 
+      - run: npm install
+      - run: npm run build
       - name: Deploy
-        id: build
-        run: |
-          sh deploy.sh
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh_pages
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_GITHUB_MOVIESTILLS }}
