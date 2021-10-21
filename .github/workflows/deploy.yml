@@ -1,0 +1,23 @@
+name: Deploy to GH Pages
+on:
+  workflow_dispatch:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - ".github/**"
+
+jobs:
+  Deploy:
+    name: Deploy to GH Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Deploy
+        id: build
+        run: |
+          sh deploy.sh

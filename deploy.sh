@@ -23,3 +23,7 @@ git commit -m 'deploy'
 git push -f git@github.com:RM-Evans/movie-stills.git main:gh-pages
 
 cd -
+
+# I should be building before I 
+
+# "deploy": "sh deploy.sh",
