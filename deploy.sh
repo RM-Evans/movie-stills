@@ -25,6 +25,6 @@ git push -f git@github.com:RM-Evans/movie-stills.git main:gh-pages
 
 cd -
 
-# I should be building before I 
+# will build brand new gh-pages branch every time 
 
 # "deploy": "sh deploy.sh",

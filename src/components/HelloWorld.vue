@@ -8,7 +8,7 @@ const count = ref(0)
 
 <template>
 	<h1>{{ msg }}</h1>
-	<h2>ZZZZZ</h2>
+	<h2>Do things and work, thank you</h2>
 
 	<p>
 		Recommended IDE setup:
